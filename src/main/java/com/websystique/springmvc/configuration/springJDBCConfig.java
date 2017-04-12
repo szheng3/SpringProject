@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 public class springJDBCConfig {
 
 
-    @Bean
+    @Bean(name = "dataSource")
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         //MySQL database we are using
