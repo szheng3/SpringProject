@@ -46,7 +46,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 			  .antMatchers("/newaccount").permitAll()
 
 
-//			  .antMatchers("/**").denyAll()
+              .antMatchers("/**").denyAll()
 
 			  .and().formLogin().loginPage("/login")
 

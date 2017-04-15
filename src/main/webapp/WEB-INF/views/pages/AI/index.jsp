@@ -107,7 +107,9 @@
                 </button>
 
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.html"><img class="logo" id="logo" src="images/logo.png" alt="Page"></a>
+                <a class="navbar-brand" href="index.html"><img class="logo" id="logo"
+                                                               src="<c:url value='/static/images/logo.png' />"
+                                                               alt="Page"></a>
 
             </div>
             <!-- Navbar Toggle End -->
