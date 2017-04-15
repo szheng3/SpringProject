@@ -20,7 +20,7 @@
         FAVICON ICON
     ==================================== -->
     <link rel="shortcut icon" href="<c:url value='/static/images/favicon.ico' />">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- ===================================
         NORMALIZE CSS
     ==================================== -->
@@ -156,7 +156,8 @@
         <div class="sp-slide clean-main-slides">
             <div class="clean-img-overlay"></div>
 
-            <img class="sp-image" src="images/slider/1.jpg" alt="Slider 1"/>
+            <img class="sp-image" src="<c:url value='/static/images/slider/1.jpg' />" alt="Slider 1"/>
+
 
             <h1 class="sp-layer clean-slider-text-big"
                 data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500"
@@ -175,7 +176,7 @@
         <!-- Slides -->
         <div class="sp-slide clean-main-slides">
             <div class="clean-img-overlay"></div>
-            <img class="sp-image" src="images/slider/2.jpg" alt="Slider 2"/>
+            <img class="sp-image" src="<c:url value='/static/images/slider/2.jpg' />" alt="Slider 2"/>
 
             <h1 class="sp-layer clean-slider-text-big"
                 data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500"
@@ -195,7 +196,7 @@
         <div class="sp-slide clean-main-slides">
             <div class="clean-img-overlay"></div>
 
-            <img class="sp-image" src="images/slider/3.jpg" alt="Slider 3"/>
+            <img class="sp-image" src="<c:url value='/static/images/slider/3.jpg' />" alt="Slider 3"/>
 
             <h1 class="sp-layer clean-slider-text-big"
                 data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500"
@@ -298,7 +299,8 @@
             <!-- Section Header End -->
 
             <div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-img wow bounceInLeft">
-                <img src="images/custom.jpg" alt="Custom Image">
+                <img src="<c:url value='/static/images/custom.jpg' />" alt="Custom Image">
+
             </div>
 
             <div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-text wow bounceInRight">
