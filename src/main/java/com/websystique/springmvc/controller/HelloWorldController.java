@@ -41,7 +41,7 @@ public class HelloWorldController {
             if (authority.getAuthority().equals("ROLE_ANONYMOUS")) {
                 model.addAttribute("greeting", getPrincipal());
 
-                return "welcome";
+                return "/AI/index";
             }
 
         }
