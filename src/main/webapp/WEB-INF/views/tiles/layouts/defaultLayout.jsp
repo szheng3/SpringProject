@@ -11,7 +11,18 @@
 <%--<link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet"></link>--%>
 <%--<link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>--%>
 <%--</head>--%>
-
+<%--<style>--%>
+<%--#footer {--%>
+<%--position: absolute;--%>
+<%--right: 0;--%>
+<%--bottom: 0;--%>
+<%--left: 0;--%>
+<%--/*padding: 0rem;*/--%>
+<%--/*margin-top: 1000px;*/--%>
+<%--/*background-color: #efefef;*/--%>
+<%--text-align: center;--%>
+<%--}--%>
+<%--</style>--%>
 
 <head>
     <%--<meta charset="UTF-8">--%>

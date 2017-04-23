@@ -31,25 +31,25 @@
             <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
                 <ul class="nav navbar-nav clean-menu-wrapper">
                     <li class="active">
-                        <a href="#clean-slider">Home</a>
+                        <a href="${pageContext.request.contextPath}/#clean-slider">Home</a>
                     </li>
                     <li>
-                        <a href="#about">Overview</a>
+                        <a href="${pageContext.request.contextPath}/#about">Overview</a>
                     </li>
                     <li>
-                        <a href="#featured-works">Product</a>
+                        <a href="${pageContext.request.contextPath}/#featured-works">Product</a>
                     </li>
                     <li>
-                        <a href="#offer">Partner</a>
+                        <a href="${pageContext.request.contextPath}/#offer">Partner</a>
                     </li>
                     <%--<li>--%>
                     <%--<a href="#pricing">Pricing</a>--%>
                     <%--</li>--%>
                     <li>
-                        <a href="#testimonial">People</a>
+                        <a href="${pageContext.request.contextPath}/#testimonial">People</a>
                     </li>
                     <li>
-                        <a href="#contact">Demo</a>
+                        <a href="${pageContext.request.contextPath}/login">Demo</a>
                     </li>
                 </ul>
             </div>

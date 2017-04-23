@@ -48,7 +48,7 @@ public class HelloWorldController {
         model.addAttribute("greeting", getPrincipal());
 
 
-        return "sucess";
+        return "success";
     }
 
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
@@ -69,10 +69,10 @@ public class HelloWorldController {
         return "accessDenied";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String loginPage() {
-        return "login";
-    }
+//    @RequestMapping(value = "/login", method = RequestMethod.GET)
+//    public String loginPage() {
+//        return "login";
+//    }
 
 
     @RequestMapping(value = "/sucess", method = RequestMethod.GET)
