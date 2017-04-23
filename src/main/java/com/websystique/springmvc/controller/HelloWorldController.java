@@ -33,7 +33,11 @@ public class HelloWorldController {
 //    }
 
     @RequestMapping(value = {"/"}, method = RequestMethod.GET)
-    public String homePage(ModelMap model) {
+    public String homePage(ModelMap model, HttpServletRequest request) {
+        String param1 = request.getParameter("welcome");
+        if (param1 != null) {
+            return "home";
+        }
 
         for (GrantedAuthority authority : SecurityContextHolder.getContext().getAuthentication().getAuthorities()) {
             String role = authority.getAuthority();

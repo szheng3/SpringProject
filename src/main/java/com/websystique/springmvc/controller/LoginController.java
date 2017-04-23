@@ -33,7 +33,18 @@ public class LoginController {
     }
 
     @RequestMapping("/login")
-    public String showLogin() {
+    public String showLogin(Model model) {
+        for (GrantedAuthority authority : SecurityContextHolder.getContext().getAuthentication().getAuthorities()) {
+            String role = authority.getAuthority();
+            System.out.println(role);
+            if (!authority.getAuthority().equals("ROLE_ANONYMOUS")) {
+                model.addAttribute("greeting", getPrincipal());
+
+                return "success";
+            }
+
+        }
+
         return "login";
     }
 
