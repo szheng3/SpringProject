@@ -101,12 +101,6 @@
 
 <body>
 
-<!-- ===================================
-    PRELOADER
-==================================== -->
-<div class="preloader">
-    <div class="status"></div>
-</div>
 
 <header id="header">
     <tiles:insertAttribute name="header"/>

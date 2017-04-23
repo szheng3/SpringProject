@@ -93,7 +93,7 @@ public class LoginController {
         model.addAttribute("greeting", getPrincipal());
 
 
-        return "accountcreated";
+        return "success";
     }
 
 

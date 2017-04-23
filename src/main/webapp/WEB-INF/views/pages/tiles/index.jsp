@@ -8,10 +8,17 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 
+<!-- ===================================
+PRELOADER
+==================================== -->
+<div class="preloader">
+    <div class="status"></div>
+</div>
 
 <!-- ===================================
 MAIN SLIDER
 ==================================== -->
+
 
 <section class="slider-pro clean-slider" id="clean-slider">
     <div class="sp-slides">

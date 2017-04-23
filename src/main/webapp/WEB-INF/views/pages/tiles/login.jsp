@@ -7,6 +7,7 @@
 <%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+
 <style>
     /*css select id*/
     #logincontainer {
@@ -24,6 +25,12 @@
         margin: auto;
     }
 
+    /*.login-form {*/
+    /*width: 400px;*/
+    /*margin: auto;*/
+
+    /*}*/
+
     /*css select html*/
 
     .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
@@ -32,7 +39,20 @@
         border-color: #7cd552;
     }
 
+    /*css select p inside div class input-group */
+    div.input-group p {
+        color: red;
+    }
+
 </style>
+
+<!-- ===================================
+PRELOADER
+==================================== -->
+<div class="preloader">
+    <div class="status"></div>
+</div>
+
 <!-- ===================================
 LOGIN SECTION
 ==================================== -->
@@ -58,12 +78,12 @@ LOGIN SECTION
                             <c:url var="loginUrl" value="/login"/>
                             <form action="${loginUrl}" method="post" class="form-horizontal">
                                 <c:if test="${param.error != null}">
-                                    <div class="alert alert-danger">
+                                    <div class="input-group input-sm">
                                         <p>Invalid username and password.</p>
                                     </div>
                                 </c:if>
                                 <c:if test="${param.logout != null}">
-                                    <div class="alert alert-success">
+                                    <div class="input-group input-sm">
                                         <p>You have been logged out successfully.</p>
                                     </div>
                                 </c:if>
@@ -86,6 +106,14 @@ LOGIN SECTION
                                     <%--</div>--%>
                                 </div>
                             </form>
+
+
+                            <div class="input-group input-sm">
+                                <form action="${pageContext.request.contextPath}/newaccount">
+                                    <input type="submit" class="btn btn-block btn-primary btn-default" value="Sign Up"/>
+                                </form>
+
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -81,7 +81,7 @@ public class HelloWorldController {
 
     @RequestMapping(value = "/sucess", method = RequestMethod.GET)
     public String success() {
-        return "sucess";
+        return "demo";
     }
 
 

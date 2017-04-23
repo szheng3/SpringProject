@@ -34,6 +34,13 @@
     </definition>
 
 
+    <!-- sign in Page -->
+    <definition name="newaccount" extends="base-definition">
+        <put-attribute name="title" value="Sign Up"/>
+        <put-attribute name="body" value="/WEB-INF/views/pages/tiles/signUp.jsp"/>
+    </definition>
+
+
     <!--&lt;!&ndash; Product Page &ndash;&gt;-->
     <!--<definition name="products" extends="base-definition">  -->
     <!--<put-attribute name="title" value="Products" />-->
