@@ -149,49 +149,49 @@ ABOUT SECTION
 <!-- ===================================
 SCREENSHOOT
 ==================================== -->
-<section class="clean-custom-sec clean-section-wrapper background-two">
-    <div class="container">
-        <div class="row">
-            <!-- Section Header -->
-            <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
-                <h1><span class="clean-color-contras">SCREENSHOOT</span></h1>
-                <div class="clean-line"></div>
-                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">`Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Repellat at, totam, nam aspernatur voluptatum nostrum officiis
-                    deserunt nisi quibusdam ipsam?</p>
-            </div>
-            <!-- Section Header End -->
+<%--<section class="clean-custom-sec clean-section-wrapper background-two">--%>
+<%--<div class="container">--%>
+<%--<div class="row">--%>
+<%--<!-- Section Header -->--%>
+<%--<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">--%>
+<%--<h1><span class="clean-color-contras">SCREENSHOOT</span></h1>--%>
+<%--<div class="clean-line"></div>--%>
+<%--<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">`Lorem ipsum dolor sit amet,--%>
+<%--consectetur adipisicing elit. Repellat at, totam, nam aspernatur voluptatum nostrum officiis--%>
+<%--deserunt nisi quibusdam ipsam?</p>--%>
+<%--</div>--%>
+<%--<!-- Section Header End -->--%>
 
-            <div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-img wow bounceInLeft">
-                <img src="<c:url value='/static/images/custom.jpg' />" alt="Custom Image">
+<%--<div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-img wow bounceInLeft">--%>
+<%--<img src="<c:url value='/static/images/custom.jpg' />" alt="Custom Image">--%>
 
-            </div>
+<%--</div>--%>
 
-            <div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-text wow bounceInRight">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia
-                    eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa
-                    nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>
+<%--<div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-text wow bounceInRight">--%>
+<%--<h3>Lorem ipsum dolor sit amet.</h3>--%>
+<%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia--%>
+<%--eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa--%>
+<%--nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>--%>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia
-                    eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa
-                    nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>
+<%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia--%>
+<%--eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa--%>
+<%--nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>--%>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia
-                    eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa
-                    nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>
+<%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia--%>
+<%--eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa--%>
+<%--nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>--%>
 
 
-            </div>
-        </div>
-    </div>
-</section>
+<%--</div>--%>
+<%--</div>--%>
+<%--</div>--%>
+<%--</section>--%>
 
 
 <!-- ===================================
 FEATURED WORK SECTION
 ==================================== -->
-<section id="featured-works" class="clean-section-wrapper">
+<section id="featured-works" class="clean-section-wrapper background-two">
     <!-- Container -->
     <div class="container">
         <div class="row">
@@ -337,7 +337,7 @@ FEATURED WORK SECTION
 <!-- ===================================
 OFFER SECTION
 ==================================== -->
-<section id="offer" class="clean-section-wrapper clean-offer-section  background-two">
+<section id="offer" class="clean-section-wrapper clean-offer-section  background-one">
     <div class="container">
         <div class="row">
 
@@ -521,7 +521,7 @@ PRICING TABLE SECTION
 <!-- ===================================
 TESTIMONIALS SECTION
 ==================================== -->
-<section id="testimonial" class="clean-testimonial-section background-one">
+<section id="testimonial" class="clean-testimonial-section background-two">
 
     <div class="clean-parallax-overlay"></div>
 

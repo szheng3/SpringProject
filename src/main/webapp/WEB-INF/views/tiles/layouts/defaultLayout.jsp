@@ -120,7 +120,7 @@
     <tiles:insertAttribute name="body"/>
 </section>
 
-<footer id="footer" class="background-two">
+<footer id="footer" class="background-one">
     <tiles:insertAttribute name="footer"/>
 </footer>
 </body>
