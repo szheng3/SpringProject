@@ -35,6 +35,18 @@ public class HelloWorldController {
     @RequestMapping(value = {"/"}, method = RequestMethod.GET)
     public String homePage(ModelMap model, HttpServletRequest request) {
         String param1 = request.getParameter("welcome");
+//        model.addAttribute("user", getPrincipal());
+        for (GrantedAuthority authority : SecurityContextHolder.getContext().getAuthentication().getAuthorities()) {
+            String role = authority.getAuthority();
+            System.out.println(role);
+            if (!authority.getAuthority().equals("ROLE_ANONYMOUS")) {
+                model.addAttribute("user", getPrincipal());
+
+            }
+
+        }
+
+
         if (param1 != null) {
             return "home";
         }
@@ -55,22 +67,22 @@ public class HelloWorldController {
         return "success";
     }
 
-    @RequestMapping(value = "/admin", method = RequestMethod.GET)
-    public String adminPage(ModelMap model) {
-        model.addAttribute("user", getPrincipal());
-        return "admin";
-    }
-
-    @RequestMapping(value = "/db", method = RequestMethod.GET)
-    public String dbaPage(ModelMap model) {
-        model.addAttribute("user", getPrincipal());
-        return "dba";
-    }
+//    @RequestMapping(value = "/admin", method = RequestMethod.GET)
+//    public String adminPage(ModelMap model) {
+//        model.addAttribute("user", getPrincipal());
+//        return "admin";
+//    }
+//
+//    @RequestMapping(value = "/db", method = RequestMethod.GET)
+//    public String dbaPage(ModelMap model) {
+//        model.addAttribute("user", getPrincipal());
+//        return "dba";
+//    }
 
     @RequestMapping(value = "/Access_Denied", method = RequestMethod.GET)
     public String accessDeniedPage(ModelMap model) {
         model.addAttribute("user", getPrincipal());
-        return "accessDenied";
+        return "error";
     }
 
 //    @RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -80,7 +92,17 @@ public class HelloWorldController {
 
 
     @RequestMapping(value = "/sucess", method = RequestMethod.GET)
-    public String success() {
+    public String success(ModelMap model) {
+        for (GrantedAuthority authority : SecurityContextHolder.getContext().getAuthentication().getAuthorities()) {
+            String role = authority.getAuthority();
+            System.out.println(role);
+            if (!authority.getAuthority().equals("ROLE_ANONYMOUS")) {
+                model.addAttribute("user", getPrincipal());
+
+            }
+
+        }
+
         return "demo";
     }
 

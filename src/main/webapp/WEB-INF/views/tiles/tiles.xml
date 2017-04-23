@@ -40,6 +40,12 @@
         <put-attribute name="body" value="/WEB-INF/views/pages/tiles/signUp.jsp"/>
     </definition>
 
+    <!-- 404 -->
+    <definition name="error" extends="base-definition">
+        <put-attribute name="title" value="error"/>
+        <put-attribute name="body" value="/WEB-INF/views/pages/tiles/error.jsp"/>
+    </definition>
+
 
     <!--&lt;!&ndash; Product Page &ndash;&gt;-->
     <!--<definition name="products" extends="base-definition">  -->

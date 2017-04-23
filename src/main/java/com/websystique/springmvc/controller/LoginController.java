@@ -38,7 +38,7 @@ public class LoginController {
             String role = authority.getAuthority();
             System.out.println(role);
             if (!authority.getAuthority().equals("ROLE_ANONYMOUS")) {
-                model.addAttribute("greeting", getPrincipal());
+                model.addAttribute("user", getPrincipal());
 
                 return "success";
             }
