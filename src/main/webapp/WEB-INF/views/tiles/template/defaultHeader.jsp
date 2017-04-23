@@ -30,7 +30,7 @@
             <!-- navbar-collapse start-->
             <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
                 <ul class="nav navbar-nav clean-menu-wrapper">
-                    <li class="active">
+                    <li>
                         <a href="${pageContext.request.contextPath}/?welcome#clean-slider">Home</a>
                     </li>
                     <li>
