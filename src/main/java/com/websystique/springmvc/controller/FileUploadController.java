@@ -1,5 +1,6 @@
 package com.websystique.springmvc.controller;
 
+
 import com.websystique.springmvc.model.FileBucket;
 import com.websystique.springmvc.model.MultiFileBucket;
 import com.websystique.springmvc.util.FileValidator;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
@@ -59,9 +59,14 @@ public class FileUploadController {
 //    }
 
     @RequestMapping(value = "/singleUpload", method = RequestMethod.POST)
-    public @ResponseBody
-    String singleFileUpload(@Valid FileBucket fileBucket,
-                            BindingResult result, ModelMap model) throws IOException {
+    public String singleFileUpload(@Valid FileBucket fileBucket,
+                                   BindingResult result, ModelMap model) throws IOException {
+        String rootPath = System.getProperty("catalina.home");
+        File dir = new File(rootPath + File.separator + "tmpFiles");
+        if (!dir.exists())
+            dir.mkdirs();
+
+        UPLOAD_LOCATION = dir.getAbsolutePath() + File.separator;
 
         if (result.hasErrors()) {
             System.out.println("validation errors");
@@ -72,8 +77,7 @@ public class FileUploadController {
 
             // Now do something with file...
             FileCopyUtils.copy(fileBucket.getFile().getBytes(), new File(UPLOAD_LOCATION + fileBucket.getFile().getOriginalFilename()));
-            String fileName = multipartFile.getOriginalFilename();
-            model.addAttribute("fileBucket", fileName);
+            model.addAttribute("fileBucket", UPLOAD_LOCATION);
             return "result";
         }
     }
