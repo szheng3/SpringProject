@@ -168,7 +168,7 @@ LOGIN SECTION
                         <tr>
                             <td>Password:</td>
                             <td><sf:input id="password" class="control" path="password"
-                                          name="password" type="text"/>
+                                          name="password" type="password"/>
                                 <div class="error">
                                     <sf:errors path="password"></sf:errors>
                                 </div>
@@ -177,7 +177,7 @@ LOGIN SECTION
                         <tr>
                             <td>Confirm Password:</td>
                             <td><input id="confirmpass" class="control" name="confirmpass"
-                                       type="text"/>
+                                       type="password"/>
                                 <div id="matchpass"></div>
                             </td>
                         </tr>

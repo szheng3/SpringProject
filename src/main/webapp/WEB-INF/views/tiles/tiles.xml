@@ -46,6 +46,10 @@
         <put-attribute name="body" value="/WEB-INF/views/pages/tiles/error.jsp"/>
     </definition>
 
+    <definition name="result" extends="base-definition">
+        <put-attribute name="title" value="result"/>
+        <put-attribute name="body" value="/WEB-INF/views/pages/tiles/result.jsp"/>
+    </definition>
 
     <!--&lt;!&ndash; Product Page &ndash;&gt;-->
     <!--<definition name="products" extends="base-definition">  -->

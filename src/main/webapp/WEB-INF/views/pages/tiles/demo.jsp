@@ -7,6 +7,7 @@
 <%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <style>
     /*css select id*/
     #logincontainer {
@@ -32,6 +33,41 @@
         border-color: #7cd552;
     }
 
+    /*#choosefile {*/
+    /*!*padding: 5px 10px;*!*/
+    /*background: #00ad2d;*/
+    /*!*border: 1px solid #00ad2d;*!*/
+    /*!*position: relative;*!*/
+    /*color: #fff;*/
+    /*!*border-radius: 2px;*!*/
+    /*!*text-align: center;*!*/
+    /*!*float: left;*!*/
+    /*cursor: pointer*/
+    /*}*/
+
+    /*.container {*/
+    /*text-align: center;*/
+    /*}*/
+
+    /*!*.content {*!*/
+    /*!*padding-top: 25%;*!*/
+    /*!*text-align: center;*!*/
+    /*!*text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),*!*/
+    /*!*0px 8px 13px rgba(0, 0, 0, 0.1),*!*/
+    /*!*0px 18px 23px rgba(0, 0, 0, 0.1);*!*/
+    /*!*}*!*/
+
+    /*.hide_file {*/
+    /*!*position: absolute;*!*/
+    /*!*z-index: 1000;*!*/
+    /*opacity: 0;*/
+    /*cursor: pointer;*/
+    /*!*right: 0;*!*/
+    /*!*top: 0;*!*/
+    /*!*height: 100%;*!*/
+    /*font-size: 24px;*/
+    /*!*width: 100%;*!*/
+    /*}*/
 </style>
 <!-- ===================================
 LOGIN SECTION
@@ -49,46 +85,61 @@ LOGIN SECTION
                     porro nesciunt quae officiis rem deserunt, nisi magni unde ipsa labore! Maiores, necessitatibus,
                     facilis!</p>
             </div>
-            <%--password and login--%>
 
-            <%--<div id="mainWrapper">--%>
-            <%--<div class="login-container">--%>
-            <%--<div class="login-card">--%>
-            <%--<div class="login-form">--%>
-            <%--<c:url var="loginUrl" value="/login"/>--%>
-            <%--<form action="${loginUrl}" method="post" class="form-horizontal">--%>
-            <%--<c:if test="${param.error != null}">--%>
-            <%--<div class="alert alert-danger">--%>
-            <%--<p>Invalid username and password.</p>--%>
-            <%--</div>--%>
-            <%--</c:if>--%>
-            <%--<c:if test="${param.logout != null}">--%>
-            <%--<div class="alert alert-success">--%>
-            <%--<p>You have been logged out successfully.</p>--%>
-            <%--</div>--%>
-            <%--</c:if>--%>
-            <%--<div class="input-group input-sm">--%>
-            <%--<label class="input-group-addon" for="username"><i class="fa fa-user"></i></label>--%>
-            <%--<input type="text" class="form-control" id="username" name="ssoId"--%>
-            <%--placeholder="Enter Username"--%>
-            <%--required>--%>
-            <%--</div>--%>
-            <%--<div class="input-group input-sm">--%>
-            <%--<label class="input-group-addon" for="password"><i class="fa fa-lock"></i></label>--%>
-            <%--<input type="password" class="form-control" id="password" name="password"--%>
-            <%--placeholder="Enter Password" required>--%>
-            <%--</div>--%>
-            <%--<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>--%>
-            <%--<div class="input-group input-sm">--%>
-            <%--&lt;%&ndash;<div class="form-actions">&ndash;%&gt;--%>
-            <%--<input type="submit"--%>
-            <%--class="btn btn-block btn-primary btn-default" value="Log in">--%>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <h2>Machine Learning</h2>
+                            <hr>
+                            <div>
+                                <%--<form action="upload" method="post" enctype="multipart/form-data" class="form-inline">--%>
+                                <form action="${pageContext.request.contextPath}/singleUpload" method="post"
+                                      enctype="multipart/form-data" class="form-inline">
+                                    <div class="form-group" id="choosefile">
+                                        <%--Choose File:--%>
+                                        <input type="file" name="file" class="hide_file"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <%--&lt;%&ndash;%>
+                                        <%--String username = (String) request.getAttribute("username");--%>
+                                        <%--System.out.println("username is: " + username);--%>
+                                        <%--%>--%>
+                                        <%--<input type="hidden" name="name" value="${username}"/>--%>
+                                        <input class="btn btn-primary" type="submit" value="upload"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%--<div class="form-container">--%>
+            <%--<h1>Spring 4 MVC File Upload Example </h1>--%>
+            <%--<form:form method="POST" enctype="multipart/form-data"--%>
+            <%--class="form-horizontal">--%>
+
+            <%--<div class="row">--%>
+            <%--<div class="form-group col-md-12">--%>
+            <%--<label class="col-md-3 control-lable" for="file">Upload a file</label>--%>
+            <%--<div class="col-md-7">--%>
+            <%--<input type="file" path="file" id="file" class="form-control input-sm"/>--%>
+            <%--&lt;%&ndash;<div class="has-error">&ndash;%&gt;--%>
+            <%--&lt;%&ndash;<form:errors path="file" class="help-inline"/>&ndash;%&gt;--%>
             <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
             <%--</div>--%>
-            <%--</form>--%>
             <%--</div>--%>
             <%--</div>--%>
+
+            <%--<div class="row">--%>
+            <%--<div class="form-actions floatRight">--%>
+            <%--<input type="submit" value="Upload" class="btn btn-primary btn-sm">--%>
             <%--</div>--%>
+            <%--</div>--%>
+            <%--</form:form>--%>
+
             <%--</div>--%>
 
 

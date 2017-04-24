@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
@@ -39,6 +40,19 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         registry.viewResolver(viewResolver);
     }
 
+    @Bean(name = "multipartResolver")
+    public StandardServletMultipartResolver resolver() {
+        return new StandardServletMultipartResolver();
+    }
+//    @Bean(name = "multipartResolver")
+//    public CommonsMultipartResolver getResolver() throws IOException {
+//        CommonsMultipartResolver resolver = new CommonsMultipartResolver();
+//        // no limit
+//        resolver.setMaxUploadSize(-1);
+//        return resolver;
+//    }
+
+
     /**
      * Configure ResourceHandlers to serve static resources like CSS/ Javascript etc...
      */
@@ -46,7 +60,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasename("classpath*:com/websystique/springmvc/messages/messages");
+        messageSource.setBasename("messages");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;
     }
