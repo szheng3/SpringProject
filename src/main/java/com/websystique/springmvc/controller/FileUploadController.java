@@ -1,6 +1,7 @@
 package com.websystique.springmvc.controller;
 
 
+import com.websystique.springmvc.AI.csv;
 import com.websystique.springmvc.model.FileBucket;
 import com.websystique.springmvc.model.MultiFileBucket;
 import com.websystique.springmvc.util.FileValidator;
@@ -60,7 +61,7 @@ public class FileUploadController {
 
     @RequestMapping(value = "/singleUpload", method = RequestMethod.POST)
     public String singleFileUpload(@Valid FileBucket fileBucket,
-                                   BindingResult result, ModelMap model) throws IOException {
+                                   BindingResult result, ModelMap model) throws Throwable {
         String rootPath = System.getProperty("catalina.home");
         File dir = new File(rootPath + File.separator + "tmpFiles");
         if (!dir.exists())
@@ -77,6 +78,14 @@ public class FileUploadController {
 
             // Now do something with file...
             FileCopyUtils.copy(fileBucket.getFile().getBytes(), new File(UPLOAD_LOCATION + fileBucket.getFile().getOriginalFilename()));
+
+            String[] input = new String[2];
+            input[0] = UPLOAD_LOCATION + fileBucket.getFile().getOriginalFilename();
+            input[1] = dir.getAbsolutePath()
+                    + File.separator;
+            new csv().csvmain(input);
+
+
             model.addAttribute("fileBucket", UPLOAD_LOCATION);
             return "result";
         }
