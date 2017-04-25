@@ -42,6 +42,10 @@
         border-color: #7cd552;
     }
 
+    div p {
+        padding: 10px;
+    }
+
     /*css select p inside div class input-group */
     div.input-group p {
         color: red;
@@ -85,4 +89,5 @@ LOGIN SECTION
 
             </div>
         </div>
+    </div>
 </section>
