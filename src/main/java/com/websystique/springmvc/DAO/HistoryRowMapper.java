@@ -16,7 +16,7 @@ public class HistoryRowMapper implements RowMapper<History> {
         offer.setIdtable1(resultSet.getInt("idtable1"));
         offer.setResult(resultSet.getBinaryStream("result"));
         offer.setUsername(resultSet.getString("username"));
-        offer.setDate(resultSet.getDate("date"));
+        offer.setDate(resultSet.getTimestamp("date"));
         return offer;
     }
 }
