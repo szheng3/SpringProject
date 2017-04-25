@@ -51,6 +51,13 @@
         <put-attribute name="body" value="/WEB-INF/views/pages/tiles/result.jsp"/>
     </definition>
 
+
+    <definition name="history" extends="base-definition">
+        <put-attribute name="title" value="history"/>
+        <put-attribute name="body" value="/WEB-INF/views/pages/tiles/history.jsp"/>
+    </definition>
+
+
     <!--&lt;!&ndash; Product Page &ndash;&gt;-->
     <!--<definition name="products" extends="base-definition">  -->
     <!--<put-attribute name="title" value="Products" />-->

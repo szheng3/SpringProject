@@ -48,8 +48,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/createaccount").permitAll()
                 .antMatchers("/newaccount").permitAll()
                 .antMatchers("/singleUpload").authenticated()
+                .antMatchers("/history").authenticated()
 
-                //todo give an role
+
+                //todo give an role history
 
                 .antMatchers("/**").denyAll()
 

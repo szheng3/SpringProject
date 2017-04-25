@@ -1,5 +1,6 @@
 package com.websystique.springmvc.controller;
 
+import com.websystique.springmvc.DAO.HistoryDAO;
 import com.websystique.springmvc.DAO.User;
 import com.websystique.springmvc.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,10 +30,32 @@ public class LoginController {
 
     private UsersService usersService;
 
+    @Autowired
+    private HistoryDAO historyDAO;
+
 
     @Autowired
     public void setUsersService(UsersService usersService) {
         this.usersService = usersService;
+    }
+
+    @RequestMapping(value = "/history", method = RequestMethod.GET)
+    public String logoutPage(HttpServletRequest request, HttpServletResponse response, ModelMap model) {
+
+        for (GrantedAuthority authority : SecurityContextHolder.getContext().getAuthentication().getAuthorities()) {
+            String role = authority.getAuthority();
+            System.out.println(role);
+            if (!authority.getAuthority().equals("ROLE_ANONYMOUS")) {
+                model.addAttribute("user", getPrincipal());
+
+            }
+
+        }
+
+        model.addAttribute("historys", historyDAO.getHistorys(getPrincipal()));
+
+
+        return "history";
     }
 
     @RequestMapping("/login")

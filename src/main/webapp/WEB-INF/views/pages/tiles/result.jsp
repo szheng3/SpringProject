@@ -39,6 +39,7 @@
                             <%
                                 String rootPath = System.getProperty("catalina.home");
                                 File dir = new File(rootPath + File.separator + "tmpFiles");
+
 //                    String outputAddr = session.getServletContext().getRealPath("/");
                                 String fileName = dir.getAbsolutePath()
                                         + File.separator + "output.txt";

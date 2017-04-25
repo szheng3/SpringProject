@@ -50,7 +50,7 @@ public class VGGNetA {
                 .seed(seed)
                 .activation("relu")
                 .updater(Updater.NESTEROVS)
-                .weightInit(WeightInit.DISTRIBUTION) // TODO Distribution in original paper but recommended Xavier & Bengio's weight approach - check relu or xavier
+                .weightInit(WeightInit.DISTRIBUTION) //  Distribution in original paper but recommended Xavier & Bengio's weight approach - check relu or xavier
                 .dist(new NormalDistribution(0.0, 0.01))
                 .iterations(iterations)
                 .gradientNormalization(GradientNormalization.RenormalizeL2PerLayer) // normalize to prevent vanishing or exploding gradients

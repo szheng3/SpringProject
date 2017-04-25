@@ -65,6 +65,7 @@ public class FileUploadController {
 //        return "result";
 //    }
 
+
     @RequestMapping(value = "/singleUpload", method = RequestMethod.POST)
     public String singleFileUpload(@Valid FileBucket fileBucket,
                                    BindingResult result, ModelMap model) throws Throwable {
@@ -151,4 +152,6 @@ public class FileUploadController {
 
         return userName;
     }
+
+    //todo view history
 }

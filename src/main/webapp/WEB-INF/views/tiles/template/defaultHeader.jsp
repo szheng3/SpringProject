@@ -52,8 +52,12 @@
                         <a href="${pageContext.request.contextPath}/login">Demo</a>
                     </li>
 
+
                     <c:choose>
                         <c:when test="${user!=null}">
+                            <li>
+                                <a href="${pageContext.request.contextPath}/history">History</a>
+                            </li>
                             <%--<li><a><c:out value="${user}"/></a></li>--%>
                             <li><a href="${pageContext.request.contextPath}/logout">Log Out</a></li>
                         </c:when>
