@@ -70,7 +70,7 @@
     <link href="<c:url value='/static/css/owl.theme.css' />" rel="stylesheet"></link>
     <link href="<c:url value='/static/css/owl.transitions.css' />" rel="stylesheet"></link>
     <link href="<c:url value='/static/css/animate.css' />" rel="stylesheet"></link>
-
+        <%--<link href="<c:url value='/static/css/landing-page.css' />" rel="stylesheet"></link>--%>
 
     <!-- ===================================
         MAIN STYLESHEET

@@ -7,6 +7,23 @@
 <%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+<style>
+    ul.images {
+        margin: auto;
+        padding: 50px;
+        white-space: nowrap;
+        width: 900px;
+        overflow-x: auto;
+        text-align: center;
+        /*background-color: #ddd;*/
+    }
+
+    ul.images li {
+        display: inline;
+        width: 150px;
+        height: 150px;
+    }
+</style>
 
 <!-- ===================================
 PRELOADER
@@ -33,12 +50,12 @@ MAIN SLIDER
             <h1 class="sp-layer clean-slider-text-big"
                 data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500"
                 data-hide-delay="200">
-                <span class="clean-color-contras">CLEAN</span> - Slider Responsive HTML Template
+                <span class="clean-color-contras">CLEAN</span> - MACHINE LEARNING
             </h1>
             <p class="sp-layer"
                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200"
                data-show-transition="left" data-hide-transition="down">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Deal with Big Data and Predict data
             </p>
 
         </div>
@@ -52,14 +69,13 @@ MAIN SLIDER
             <h1 class="sp-layer clean-slider-text-big"
                 data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500"
                 data-hide-delay="200">
-                <span class="clean-color-contras">CLEAN</span> - Slider Responsive HTML Template
+                <span class="clean-color-contras">CLEAN</span> - MACHINE LEARNING
             </h1>
 
             <p class="sp-layer"
                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200"
                data-show-transition="left" data-hide-transition="down">
-                Lorem ipsum dolor sit amet, consectetur adipisicing.
-            </p>
+                Deal with Big Data and Predict data </p>
         </div>
         <!-- Slides End -->
 
@@ -72,14 +88,13 @@ MAIN SLIDER
             <h1 class="sp-layer clean-slider-text-big"
                 data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500"
                 data-hide-delay="200">
-                <span class="clean-color-contras">CLEAN</span> - Slider Responsive HTML Template
+                <span class="clean-color-contras">CLEAN</span> - MACHINE LEARNING
             </h1>
 
             <p class="sp-layer"
                data-position="center" data-vertical="15%" data-show-delay="1000" data-hide-delay="200"
                data-show-transition="left" data-hide-transition="down">
-                Lorem ipsum dolor sit amet, consectetur adipisicing.
-            </p>
+                Deal with Big Data and Predict data </p>
 
         </div>
         <!-- Slides End -->
@@ -97,7 +112,7 @@ ABOUT SECTION
 
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
-                <h1><span class="clean-color-contras">ABOUT OFFERS</span></h1>
+                <h1><span class="clean-color-contras">ABOUT US</span></h1>
                 <div class="clean-line"></div>
                 <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit. Officia voluptas voluptatem est nobis quibusdam, laboriosam ipsam
@@ -113,7 +128,7 @@ ABOUT SECTION
                     <div class="clean-icon">
                         <i class="fa fa-html5"></i>
                     </div>
-                    <h3>HTML TEMPLATE</h3>
+                    <h3>MACHINE LEARNING</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatibus placeat vel minima quia
                         earum eaque repellendus odio beatae suscipit.</p>
                 </div>
@@ -131,7 +146,7 @@ ABOUT SECTION
                     <div class="clean-icon">
                         <i class="fa fa-laptop"></i>
                     </div>
-                    <h3>Responsive TEMPLATE</h3>
+                    <h3>HTML5</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium, aperiam!
                         Impedit nam atque reiciendis itaque, ab in vitae sit.</p>
                 </div>
@@ -154,48 +169,6 @@ ABOUT SECTION
 
 
 <!-- ===================================
-SCREENSHOOT
-==================================== -->
-<%--<section class="clean-custom-sec clean-section-wrapper background-two">--%>
-<%--<div class="container">--%>
-<%--<div class="row">--%>
-<%--<!-- Section Header -->--%>
-<%--<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">--%>
-<%--<h1><span class="clean-color-contras">SCREENSHOOT</span></h1>--%>
-<%--<div class="clean-line"></div>--%>
-<%--<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">`Lorem ipsum dolor sit amet,--%>
-<%--consectetur adipisicing elit. Repellat at, totam, nam aspernatur voluptatum nostrum officiis--%>
-<%--deserunt nisi quibusdam ipsam?</p>--%>
-<%--</div>--%>
-<%--<!-- Section Header End -->--%>
-
-<%--<div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-img wow bounceInLeft">--%>
-<%--<img src="<c:url value='/static/images/custom.jpg' />" alt="Custom Image">--%>
-
-<%--</div>--%>
-
-<%--<div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-text wow bounceInRight">--%>
-<%--<h3>Lorem ipsum dolor sit amet.</h3>--%>
-<%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia--%>
-<%--eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa--%>
-<%--nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>--%>
-
-<%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia--%>
-<%--eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa--%>
-<%--nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>--%>
-
-<%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut tenetur, amet earum quia--%>
-<%--eligendi obcaecati. Repudiandae id illum, vero iste enim reprehenderit quaerat, harum pariatur ipsa--%>
-<%--nulla tempora ex ratione illo assumenda libero ea, delectus vitae, expedita optio porro.</p>--%>
-
-
-<%--</div>--%>
-<%--</div>--%>
-<%--</div>--%>
-<%--</section>--%>
-
-
-<!-- ===================================
 FEATURED WORK SECTION
 ==================================== -->
 <section id="featured-works" class="clean-section-wrapper background-two">
@@ -205,13 +178,14 @@ FEATURED WORK SECTION
 
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
-                <h1><span class="clean-color-contras">FEATURED WORK</span></h1>
+                <h1><span class="clean-color-contras">PRODUCT</span></h1>
                 <div class="clean-line"></div>
                 <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit. Magnam itaque enim aliquid praesentium odio dolorum sunt. Aperiam
                     delectus, eligendi assumenda!</p>
             </div>
             <!-- Section Header End -->
+
 
         </div>
     </div>
@@ -350,179 +324,29 @@ OFFER SECTION
 
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
-                <h1><span class="clean-color-contras">FEATURES</span></h1>
+                <h1><span class="clean-color-contras">PARTNER</span></h1>
                 <div class="clean-line"></div>
                 <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit. Delectus tempore voluptatem dolor cum autem qui maiores esse sit, vel
                     voluptate.</p>
+
+                <div class="logos">
+                    <ul class="images">
+                        <li><img src="<c:url value='/static/images/logos/adobe.png'/>"/></li>
+                        <li><img src="<c:url value='/static/images/logos/zendesk.png'/>"/></li>
+                        <li><img src="<c:url value='/static/images/logos/ebay.png'/>"/></li>
+                        <li><img src="<c:url value='/static/images/logos/evernote.png'/>"/></li>
+                        <li><img src="<c:url value='/static/images/logos/airbnb.png'/>"/></li>
+                        <li><img src="<c:url value='/static/images/logos/zappos.png'/>"/></li>
+                    </ul>
+                </div>
             </div>
             <!-- Section Header End -->
 
-            <!-- Services -->
-            <div class="clean-service-wrapper">
-                <div class="col-md-4 col-sm-4 col-xs-12 wow bounceInLeft">
 
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-html5"></i>
-                        <h3>HTML5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-css3"></i>
-                        <h3>CSS3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-jsfiddle"></i>
-                        <h3>CLEAN CODE</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s">
-
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-laptop"></i>
-                        <h3>RESPONSIVE</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-cog"></i>
-                        <h3>EASY TO EDIT</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-star"></i>
-                        <h3>FONT AWESOME</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 col-sm-4 col-xs-12 wow bounceInRight">
-
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-support"></i>
-                        <h3>FREE SUPPORT</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-arrow-up"></i>
-                        <h3>FREE UPDATE</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                    <div class="clean-blurb-icon-only">
-                        <i class="fa fa-play"></i>
-                        <h3>AND MORE</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora quis numquam odio.
-                            Asperiores perspiciatis maiores voluptas, velit similique placeat.</p>
-                    </div>
-
-                </div>
-                <!-- Services End -->
-
-            </div>
         </div>
     </div>
 </section>
-
-
-<!-- ===================================
-PRICING TABLE SECTION
-==================================== -->
-<%--<section id="pricing" class="clean-pricing-section">--%>
-<%--<div class="container">--%>
-<%--<div class="row">--%>
-
-<%--<!-- Section Header -->--%>
-<%--<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">--%>
-<%--<h1><span class="clean-color-contras">PRICE</span></h1>--%>
-<%--<div class="clean-line"></div>--%>
-<%--<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolorem nostrum pariatur consequatur aut est aspernatur reiciendis veniam delectus saepe.</p>--%>
-<%--</div>--%>
-<%--<!-- Section Header End -->--%>
-
-<%--<div class="clean-pricing-wrapper">--%>
-
-<%--<!-- Plans -->--%>
-<%--<div class="col-md-4 col-sm-4 col-xs-12 clean-pricing-plans wow bounceInLeft">--%>
-<%--<div class="clean-pricing-titles">--%>
-<%--<h2>Free</h2>--%>
-<%--<p><span>$0</span>Month</p>--%>
-<%--</div>--%>
-<%--<div class="clean-pricing-service-name">--%>
-<%--<ul>--%>
-<%--<li>HTML5 Template</li>--%>
-<%--<li>CSS valid</li>--%>
-<%--<li>Responsive Theme</li>--%>
-<%--<li>Easy edit</li>--%>
-<%--<li>Support</li>--%>
-<%--</ul>--%>
-<%--</div>--%>
-
-<%--<a href="" class="clean-signup-btn">SIGN UP</a>--%>
-<%--</div>--%>
-<%--<!-- Plans End -->--%>
-
-<%--<!-- Plans -->--%>
-<%--<div class="col-md-4 col-sm-4 col-xs-12 clean-pricing-plans clean-recommended-pricing wow fadeInUp" data-wow-duration="1s">--%>
-<%--<div class="clean-pricing-titles">--%>
-<%--<h2>BASIC</h2>--%>
-<%--<p><span>$15/</span>Month</p>--%>
-<%--</div>--%>
-<%--<div class="clean-pricing-service-name">--%>
-<%--<ul>--%>
-<%--<li>HTML5 Template</li>--%>
-<%--<li>CSS valid</li>--%>
-<%--<li>Responsive Theme</li>--%>
-<%--<li>Easy edit</li>--%>
-<%--<li>Support</li>--%>
-<%--</ul>--%>
-<%--</div>--%>
-
-<%--<a href="" class="clean-signup-btn">SIGN UP</a>--%>
-<%--</div>--%>
-<%--<!-- Plans End -->--%>
-
-<%--<!-- Plans -->--%>
-<%--<div class="col-md-4 col-sm-4 col-xs-12 clean-pricing-plans wow bounceInRight">--%>
-<%--<div class="clean-pricing-titles">--%>
-<%--<h2>PREMIUM</h2>--%>
-<%--<p><span>$45/</span>Month</p>--%>
-<%--</div>--%>
-<%--<div class="clean-pricing-service-name">--%>
-<%--<ul>--%>
-<%--<li>HTML5 Template</li>--%>
-<%--<li>CSS valid</li>--%>
-<%--<li>Responsive Theme</li>--%>
-<%--<li>Easy edit</li>--%>
-<%--<li>Support</li>--%>
-<%--</ul>--%>
-<%--</div>--%>
-
-<%--<a href="" class="clean-signup-btn">SIGN UP</a>--%>
-<%--</div>--%>
-<%--<!-- Plans End -->--%>
-
-<%--</div>--%>
-<%--</div>--%>
-<%--</div>--%>
-<%--</section>--%>
 
 
 <!-- ===================================
@@ -586,51 +410,3 @@ TESTIMONIALS SECTION
         </div>
     </div>
 </section>
-
-<!-- ===================================
-CONTACT SECTION
-==================================== -->
-<%--<section id="contact" class="clean-section-wrapper clean-contact-section background-one" data-stellar-background-ratio="0.5">--%>
-<%--<div class="clean-parallax-overlay"></div>--%>
-<%--<div class="container">--%>
-<%--<div class="row">--%>
-
-<%--<!-- Section Header -->--%>
-<%--<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown clean-section-header-parallax">--%>
-<%--<h1><span class="clean-color-contras">CONTACT US</span></h1>--%>
-<%--<div class="clean-line"></div>--%>
-<%--<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum error ab rem atque impedit soluta quidem, deleniti culpa. Accusantium placeat commodi harum, aut cumque numquam molestiae vel ut eum consequuntur.</p>--%>
-<%--</div>--%>
-<%--<!-- Section Header End -->--%>
-
-<%--<div class="clean-contact-details">--%>
-
-<%--<!-- Contact Form -->--%>
-<%--<div class="col-md-12 col-sm-12 col-xs-12 clean-contact-form wow bounceInRight">--%>
-<%--<div id="contact-result"></div>--%>
-<%--<div id="contact-form">--%>
-<%--<div class="clean-input-name clean-input-fields">--%>
-<%--<label for="name">Name*</label>--%>
-<%--<input type="text" name="name" id="name" required>--%>
-<%--</div>--%>
-
-<%--<div class="clean-input-email clean-input-fields">--%>
-<%--<label for="email">Email*</label>--%>
-<%--<input type="email" name="email" id="email" required>--%>
-<%--</div>--%>
-
-<%--<div class="clean-input-message clean-input-fields">--%>
-<%--<label for="message">Message</label>--%>
-<%--<textarea name="message" id="message" cols="30" rows="10"></textarea>--%>
-<%--</div>--%>
-
-<%--<input type="submit" value="SEND MESSAGE" id="submit-btn">--%>
-<%--</div>--%>
-<%--</div>--%>
-<%--<!-- Contact Form End -->--%>
-
-<%--</div>--%>
-<%--</div>--%>
-<%--</div>--%>
-<%--</section>--%>
-

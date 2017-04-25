@@ -24,11 +24,7 @@ public class springJDBCConfig {
         dataSource.setPassword("root");//change pwd
 
         //H2 database
-        /*
-        dataSource.setDriverClassName("org.h2.Driver");
-        dataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
-        dataSource.setUsername("sa");
-        dataSource.setPassword("");*/
+
         return dataSource;
     }
 

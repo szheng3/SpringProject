@@ -65,17 +65,6 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         return messageSource;
     }
 
-//	@Bean(name = "HelloWorld")
-//	public ViewResolver viewResolver() {
-//		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-//		viewResolver.setViewClass(JstlView.class);
-//		viewResolver.setPrefix("/WEB-INF/views/pages/");
-//		viewResolver.setSuffix(".jsp");
-//		viewResolver.setOrder(1);
-//
-//
-//		return viewResolver;
-//	}
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
