@@ -7,6 +7,9 @@ import com.websystique.springmvc.model.MultiFileBucket;
 import com.websystique.springmvc.util.FileValidator;
 import com.websystique.springmvc.util.MultiFileValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.FileCopyUtils;
@@ -67,6 +70,16 @@ public class FileUploadController {
         if (!dir.exists())
             dir.mkdirs();
 
+        for (GrantedAuthority authority : SecurityContextHolder.getContext().getAuthentication().getAuthorities()) {
+            String role = authority.getAuthority();
+            System.out.println(role);
+            if (!authority.getAuthority().equals("ROLE_ANONYMOUS")) {
+                model.addAttribute("user", getPrincipal());
+
+            }
+
+        }
+
         UPLOAD_LOCATION = dir.getAbsolutePath() + File.separator;
 
         if (result.hasErrors()) {
@@ -119,4 +132,17 @@ public class FileUploadController {
         }
     }
 
+    private String getPrincipal() {
+        String userName = null;
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+
+        if (principal instanceof UserDetails) {
+            userName = ((UserDetails) principal).getUsername();
+        } else {
+            userName = principal.toString();
+        }
+
+        return userName;
+    }
 }
