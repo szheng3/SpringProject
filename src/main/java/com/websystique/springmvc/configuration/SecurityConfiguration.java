@@ -47,7 +47,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/static/**").permitAll()
                 .antMatchers("/createaccount").permitAll()
                 .antMatchers("/newaccount").permitAll()
-                .antMatchers("/singleUpload").permitAll()
+                .antMatchers("/singleUpload").authenticated()
+
                 //todo give an role
 
                 .antMatchers("/**").denyAll()
