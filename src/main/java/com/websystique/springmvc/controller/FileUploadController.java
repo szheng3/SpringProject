@@ -2,6 +2,8 @@ package com.websystique.springmvc.controller;
 
 
 import com.websystique.springmvc.AI.csv;
+import com.websystique.springmvc.DAO.History;
+import com.websystique.springmvc.DAO.HistoryDAO;
 import com.websystique.springmvc.model.FileBucket;
 import com.websystique.springmvc.model.MultiFileBucket;
 import com.websystique.springmvc.util.FileValidator;
@@ -22,6 +24,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,12 +33,12 @@ import java.util.List;
 public class FileUploadController {
 
     private static String UPLOAD_LOCATION = "/Users/zhengshuai/";
-
     @Autowired
     FileValidator fileValidator;
-
     @Autowired
     MultiFileValidator multiFileValidator;
+    @Autowired
+    private HistoryDAO historyDAO;
 
     @InitBinder("fileBucket")
     protected void initBinderFileBucket(WebDataBinder binder) {
@@ -98,6 +101,9 @@ public class FileUploadController {
                     + File.separator;
             new csv().csvmain(input);
 
+            History history = new History(getPrincipal(), new FileInputStream(new File(dir.getAbsolutePath()
+                    + File.separator + "output.txt")));
+            historyDAO.create(history);
 
             model.addAttribute("fileBucket", UPLOAD_LOCATION);
             return "result";

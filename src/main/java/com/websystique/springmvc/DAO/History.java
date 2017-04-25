@@ -10,6 +10,11 @@ public class History {
     private InputStream result;
 
 
+    public History(String username, InputStream result) {
+        this.username = username;
+        this.result = result;
+    }
+
     public String getUsername() {
         return username;
     }
