@@ -65,28 +65,24 @@ LOGIN SECTION
 
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
-                <h1><span class="clean-color-contras">LOGIN IN</span></h1>
+                <h1><span class="clean-color-contras">HISTORY</span></h1>
                 <div class="clean-line"></div>
-                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1"><%
+                <%
                     List<History> historys = (List<History>) request.getAttribute("historys");
 
 
                     for (History history : historys
                             ) {
-                        out.write(" <p class=\"col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1\">");
+                        out.write(" <div ><p class=\"col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1\">");
                         out.write(IOUtils.toString(history.getResult(), StandardCharsets.UTF_8.name()));
-                        out.write(history.getDate().toString() + "</p><hr>");
+                        out.write(history.getDate().toString() + "</p></div>");
 
 
                     }
 
                 %>
-                </p>
 
 
             </div>
-
-
         </div>
-    </div>
 </section>
