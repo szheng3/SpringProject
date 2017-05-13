@@ -34,13 +34,13 @@
                         <a href="${pageContext.request.contextPath}/?welcome#clean-slider">Home</a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/?welcome#about">Overview</a>
+                        <a href="${pageContext.request.contextPath}/?welcome#about">about</a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/?welcome#featured-works">Product</a>
+                        <a href="${pageContext.request.contextPath}/?welcome#featured-works">Products</a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/?welcome#offer">Partner</a>
+                        <a href="${pageContext.request.contextPath}/?welcome#offer">Partners</a>
                     </li>
                     <%--<li>--%>
                     <%--<a href="#pricing">Pricing</a>--%>
@@ -48,6 +48,11 @@
                     <li>
                         <a href="${pageContext.request.contextPath}/?welcome#testimonial">People</a>
                     </li>
+
+                    <li>
+                        <a href="${pageContext.request.contextPath}/?welcome#contact">CONTACT US</a>
+                    </li>
+
                     <li>
                         <a href="${pageContext.request.contextPath}/login">Demo</a>
                     </li>

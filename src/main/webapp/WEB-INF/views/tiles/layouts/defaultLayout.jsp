@@ -63,7 +63,7 @@
         PLUGIN
     ==================================== -->
 
-
+        <link href="<c:url value='/static/css/style.css' />" rel="stylesheet"></link>
     <link href="<c:url value='/static/css/magnific-popup.css' />" rel="stylesheet"></link>
     <link href="<c:url value='/static/css/slider-pro.css' />" rel="stylesheet"></link>
     <link href="<c:url value='/static/css/owl.carousel.css' />" rel="stylesheet"></link>
