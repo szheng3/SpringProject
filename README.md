@@ -108,6 +108,7 @@ click the fix button to select war exploded.
    
 24. contact us in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 555-603
    ![idea_24](./img/17.png)
+   
 25. Footer in the src/main/webapp/WEB-INF/views/tiles/template/defaultFooter.jsp from line 1-67
    ![idea_23](./img/18.png)
 
