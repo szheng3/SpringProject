@@ -71,7 +71,7 @@ With above preparation done, simulate the website with following steps:
 
 13.  Copy and paste VM Option, click "OK"
 click the fix button to select war exploded:
-    ![idea_41](./img/6.png)
+    ![idea_41](./img/20.png)
 
     now you should be able to run Machine Learning algorithm.
 
