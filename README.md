@@ -101,7 +101,9 @@ click the fix button to select war exploded:
 
 21. After that you can upload and deploy ".war" files to this free account.
     ![idea_53](./img/54.png)
-
+    
+22. access web pages in a browser after running the content in a third party serve. My Demo  Sample-env-2.xmxbdjuc3w.us-west-2.elasticbeanstalk.com 
+    ![idea_55](./img/70.png)
 
 
   
