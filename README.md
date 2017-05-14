@@ -68,12 +68,12 @@ With above preparation done, simulate the website with following steps:
 
 12.  click configure, click +, and select the path that Tomcat download :
 
-    ![vm0](./img/5.png)
+    ![idea_40](./img/5.png)
 
 13.  Copy and paste VM Option, click "OK"
 click the fix button to select war exploded.
 
-    ![vm1](./img/6.png)
+    ![idea_41](./img/6.png)
 
     now you should be able to run Machine Learning algorithm.
 
