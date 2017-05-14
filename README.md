@@ -50,7 +50,6 @@ With above preparation done, simulate the website with following steps:
 
 8.  Click "OK"
 
-
 9.  Click "finish"
 
     ![idea_08](./img/3.png)
