@@ -98,18 +98,18 @@ click the fix button to select war exploded.
    ![idea_18](./img/13.png)
    
 21. product in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 196-315 and images in the location src/main/webapp/static/images/featured-work
-   ![idea_18](./img/14.png)
+   ![idea_19](./img/14.png)
    
 22. partners in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 318-349 and images in the location src/main/webapp/static/images/logos
-   ![idea_18](./img/15.png)
+   ![idea_20](./img/15.png)
    
 23. people in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 352-437 and images in the location src/main/webapp/static/images/images
-   ![idea_18](./img/16.png)
+   ![idea_21](./img/16.png)
    
 24. contact us in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 555-603
-   ![idea_18](./img/17.png)
+   ![idea_22](./img/17.png)
 25. Footer in the src/main/webapp/WEB-INF/views/tiles/template/defaultFooter.jsp from line 1-67
-   ![idea_18](./img/18.png)
+   ![idea_23](./img/18.png)
 
   
    # References:
