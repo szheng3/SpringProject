@@ -29,7 +29,7 @@ import java.io.PrintWriter;
 /**
  * Created by Shuai Zheng on 2/20/17.
  */
-public class csv {
+public class CSV {
 
 
     private Logger log = LoggerFactory.getLogger(org.deeplearning4j.examples.dataExamples.CSVExample.class);

@@ -45,8 +45,7 @@ With above preparation done, simulate the website with following steps:
 6.  Click the "+" bottom, choose "JDK"
     ![idea_05](https://cloud.githubusercontent.com/assets/23114334/21919942/dca1076a-d912-11e6-801a-17ed260b9d14.png)
 
-7.  Choose the jdk 1.7 file folder you saved to.
-    below is the example location of my jdk 1.7.0_80
+7.  Choose the jdk 1.8 file folder you saved to.
     ![idea_06](https://cloud.githubusercontent.com/assets/23114334/21919952/eed99938-d912-11e6-9c19-124d4f84600f.png)
 
 8.  Click "OK"

@@ -1,7 +1,7 @@
 package com.websystique.springmvc.controller;
 
 
-import com.websystique.springmvc.AI.csv;
+import com.websystique.springmvc.AI.CSV;
 import com.websystique.springmvc.DAO.History;
 import com.websystique.springmvc.DAO.HistoryDAO;
 import com.websystique.springmvc.model.FileBucket;
@@ -100,7 +100,7 @@ public class FileUploadController {
             input[0] = UPLOAD_LOCATION + fileBucket.getFile().getOriginalFilename();
             input[1] = dir.getAbsolutePath()
                     + File.separator;
-            new csv().csvmain(input);
+            new CSV().csvmain(input);
 
             History history = new History(getPrincipal(), new FileInputStream(new File(dir.getAbsolutePath()
                     + File.separator + "output.txt")));
