@@ -112,7 +112,6 @@ click the fix button to select war exploded.
    
 25. Footer in the src/main/webapp/WEB-INF/views/tiles/template/defaultFooter.jsp from line 1-67
    ![idea_23](./img/18.png)
-
   
    # References:
     
