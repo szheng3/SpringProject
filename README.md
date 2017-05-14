@@ -6,9 +6,10 @@ Prerequement:
 
 To simulate the website, below are required:
 
-1. Java JDK 1.8
+1. Java JDK 1.7
     Can be downloaded from webite: 
-    http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+    http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html
+    ![Screenshot](https://cloud.githubusercontent.com/assets/23114334/21918854/6b1d50d8-d90a-11e6-9f40-eef8acdaa23f.png)
    
 2. IntelliJ [Ultimate] Edition, which is cross platform IDEA and could be used in Windows, Mac, Linux system
     Can be acquired using student account and download at:
@@ -45,8 +46,9 @@ With above preparation done, simulate the website with following steps:
 6.  Click the "+" bottom, choose "JDK"
 
 
-7.  Choose the jdk 1.8 file folder you saved to.
-    ![idea_06](./img/2.png)
+7.  Choose the jdk 1.7 file folder you saved to.
+        below is the example location of my jdk 1.7.0_80
+        ![idea_06](https://cloud.githubusercontent.com/assets/23114334/21919952/eed99938-d912-11e6-9c19-124d4f84600f.png)
 
 8.  Click "OK"
 
