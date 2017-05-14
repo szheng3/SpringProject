@@ -106,6 +106,8 @@ click the fix button to select war exploded:
     ![idea_55](./img/70.png)
 
 
+
+
 # References:
     
 1. deeplearning4j:https://deeplearning4j.org/
