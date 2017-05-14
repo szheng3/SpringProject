@@ -50,7 +50,6 @@ With above preparation done, simulate the website with following steps:
 
 8.  Click "OK"
 
-    ![idea_07](https://cloud.githubusercontent.com/assets/23114334/21919969/0cc8142e-d913-11e6-9b96-fbda02c7766d.png)
 
 9.  Click "finish"
 
