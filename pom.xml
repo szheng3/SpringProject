@@ -28,6 +28,12 @@
             <artifactId>dl4j-examples</artifactId>
             <version>0.5-SNAPSHOT</version>
         </dependency>
+        
+        <dependency>
+            <groupId>org.deeplearning4j</groupId>
+            <artifactId>arbiter-core</artifactId>
+            <version>0.8.0</version>
+        </dependency>
         <!--<dependency>-->
         <!--<groupId>org.deeplearning4j</groupId>-->
         <!--<artifactId>deeplearning4j-examples</artifactId>-->

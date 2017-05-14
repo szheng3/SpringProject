@@ -82,37 +82,32 @@ click the fix button to select war exploded:
 
     ![idea_13](./img/8.png)
 
-16. Demo
-    ![idea_14](./img/9.png)
+# Deploy to the third party
+16. Build Artifacts
+    ![idea_50](./img/50.png)
 
-17. menu in the location src/main/webapp/WEB-INF/views/tiles/template/defaultHeader.jsp from line 29-59
-    ![idea_15](./img/10.png)
-18. image in the location src/main/webapp/static/images/slider from image 1-3
-    ![idea_16](./img/11.png)
+17. click Build and generate .war file
+    ![idea_51](./img/51.png)
+
+18. go to https://console.aws.amazon.com and then create a free account (account creation process may be changed since it uses 2-step verification).
+
+19. sign in to Amazon AWS from https://console.aws.amazon.com and find "ElasticBeans Talk" under "Deployment & Management".
+    ![idea_52](./img/52.png)
+
+
+20. After that you may see an empty page, just click "Create a new Application" from right corner side of the page. Enter your information and then just simply click your new created environment.
+    ![idea_53](./img/53.png)
     
-19. logo in the location src/main/webapp/static/images/logo.png
-    ![idea_17](./img/12.png)
-20. about us in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 106-168
-   ![idea_18](./img/13.png)
-   
-21. product in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 196-315 and images in the location src/main/webapp/static/images/featured-work
-   ![idea_19](./img/14.png)
-   
-22. partners in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 318-349 and images in the location src/main/webapp/static/images/logos
-   ![idea_20](./img/15.png)
-   
-23. people in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 352-437 and images in the location src/main/webapp/static/images/images
-   ![idea_21](./img/16.png)
-   
-24. contact us in the src/main/webapp/WEB-INF/views/pages/tiles/index.jsp from line 555-603
 
-   ![idea_24](./img/17.png)
-   
-25. Footer in the src/main/webapp/WEB-INF/views/tiles/template/defaultFooter.jsp from line 1-67
-   ![idea_23](./img/18.png)
+21. After that you can upload and deploy ".war" files to this free account.
+    ![idea_53](./img/54.png)
+
+
+
   
-   # References:
+# References:
     
-   deeplearning4j:https://deeplearning4j.org/
+1. deeplearning4j:https://deeplearning4j.org/
+2. Spring 4 MVC+Apache Tiles 3 Example: http://websystique.com/springmvc/spring-4-mvc-apache-tiles-3-annotation-based-example/
 
 
