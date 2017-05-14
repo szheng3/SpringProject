@@ -8,6 +8,10 @@ import java.io.File;
 
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
+
+//    @Autowired
+//    ServletContext servletContext;
+
     private static final long MAX_FILE_SIZE = 5242880; // 5MB : Max file size.
     // Beyond that size spring will throw exception.
     private static final long MAX_REQUEST_SIZE = 20971520; // 20MB : Total request size containing Multi part.
@@ -35,7 +39,8 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
     }
 
     private MultipartConfigElement getMultipartConfigElement() {
-        String rootPath = System.getProperty("catalina.home");
+        String rootPath = System.getProperty("java.io.tmpdir");
+        System.out.println(rootPath);
         File dir = new File(rootPath + File.separator + "tmpFiles");
         if (!dir.exists())
             dir.mkdirs();

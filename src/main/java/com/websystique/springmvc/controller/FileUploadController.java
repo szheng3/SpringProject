@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletContext;
 import javax.validation.Valid;
 import java.io.File;
 import java.io.FileInputStream;
@@ -37,6 +38,8 @@ public class FileUploadController {
     FileValidator fileValidator;
     @Autowired
     MultiFileValidator multiFileValidator;
+    @Autowired
+    ServletContext servletContext;
     @Autowired
     private HistoryDAO historyDAO;
 
@@ -69,7 +72,9 @@ public class FileUploadController {
     @RequestMapping(value = "/singleUpload", method = RequestMethod.POST)
     public String singleFileUpload(@Valid FileBucket fileBucket,
                                    BindingResult result, ModelMap model) throws Throwable {
-        String rootPath = System.getProperty("catalina.home");
+//        String rootPath = System.getProperty("java.io.tmpdir");
+        String rootPath = System.getProperty("java.io.tmpdir");
+//        System.getProperty("java.io.tmpdir")
         File dir = new File(rootPath + File.separator + "tmpFiles");
         if (!dir.exists())
             dir.mkdirs();
@@ -105,6 +110,8 @@ public class FileUploadController {
             History history = new History(getPrincipal(), new FileInputStream(new File(dir.getAbsolutePath()
                     + File.separator + "output.txt")));
             historyDAO.create(history);
+            model.addAttribute("rootPath", rootPath);
+
 
             model.addAttribute("fileBucket", UPLOAD_LOCATION);
             return "result";

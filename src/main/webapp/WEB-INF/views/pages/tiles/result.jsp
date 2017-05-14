@@ -37,7 +37,8 @@
                     <div>
                         <div class="content">
                             <%
-                                String rootPath = System.getProperty("catalina.home");
+
+                                String rootPath = (String) request.getAttribute("rootPath");
                                 File dir = new File(rootPath + File.separator + "tmpFiles");
 
 //                    String outputAddr = session.getServletContext().getRealPath("/");
