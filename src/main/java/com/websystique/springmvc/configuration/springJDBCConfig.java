@@ -19,15 +19,30 @@ public class springJDBCConfig {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         //MySQL database we are using
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");//change url
-        dataSource.setUsername("root");//change userid
-        dataSource.setPassword("root");//change pwd
+        dataSource.setUrl("jdbc:mysql://sql3.freemysqlhosting.net/sql3174311?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");//change url
+        dataSource.setUsername("sql3174311");//change userid
+        dataSource.setPassword("4aZXGH1Yrz");//change pwd
 
         //H2 database
+//        DatabasePopulatorUtils.execute(createDatabasePopulator(), dataSource);
+
 
         return dataSource;
     }
 
+//    @Bean
+//    public DataSource db() {
+//        EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
+//        builder.setType(H2).addScript("classpath:com/websystique/springmvc/MySQLDB/db.sql");
+//        return builder.build();
+//    }
+//
+//    private DatabasePopulator createDatabasePopulator() {
+//        ResourceDatabasePopulator databasePopulator = new ResourceDatabasePopulator();
+//        databasePopulator.setContinueOnError(true);
+//        databasePopulator.addScript(new ClassPathResource("com/websystique/springmvc/MySQLDB/db.sql"));
+//        return databasePopulator;
+//    }
 //    @Bean
 //    public JdbcTemplate jdbcTemplate() {
 //        JdbcTemplate jdbcTemplate = new JdbcTemplate();
