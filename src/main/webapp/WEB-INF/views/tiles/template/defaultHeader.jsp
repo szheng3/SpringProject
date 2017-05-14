@@ -50,7 +50,7 @@
                     </li>
 
                     <li>
-                        <a href="${pageContext.request.contextPath}/?welcome#contact">CONTACT US</a>
+                        <a href="${pageContext.request.contextPath}/?welcome#contact">CONTACT</a>
                     </li>
 
                     <li>
