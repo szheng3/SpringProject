@@ -32,7 +32,7 @@ import java.io.PrintWriter;
 public class CSV {
 
 
-    private Logger log = LoggerFactory.getLogger(org.deeplearning4j.examples.dataExamples.CSVExample.class);
+    private Logger log = LoggerFactory.getLogger(CSV.class);
 
     public void csvmain(String[] args) throws Throwable {
 
