@@ -40,7 +40,7 @@ With above preparation done, simulate the website with following steps:
 
 5.  Click "next"
 
-    ![idea_04](https://cloud.githubusercontent.com/assets/23114334/21919931/c58e097e-d912-11e6-8822-9a404d35cdde.png)
+    ![idea_04](./img/1.png)
 
 6.  Click the "+" bottom, choose "JDK"
     ![idea_05](https://cloud.githubusercontent.com/assets/23114334/21919942/dca1076a-d912-11e6-801a-17ed260b9d14.png)
