@@ -19,9 +19,9 @@ public class springJDBCConfig {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         //MySQL database we are using
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://sql3.freemysqlhosting.net/sql3174311?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");//change url
-        dataSource.setUsername("sql3174311");//change userid
-        dataSource.setPassword("4aZXGH1Yrz");//change pwd
+        dataSource.setUrl("jdbc:mysql://localhost:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");//change url
+        dataSource.setUsername("root");//change userid
+        dataSource.setPassword("root");//change pwd
 
         //H2 database
 //        DatabasePopulatorUtils.execute(createDatabasePopulator(), dataSource);

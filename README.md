@@ -18,6 +18,14 @@ To simulate the website, below are required:
 3. Apache Tomcat 8
     Can be downloaded from website:
     http://tomcat.apache.org/download-80.cgi
+    
+4. MySQL
+   Can be downloaded from website:
+   https://www.mysql.com/downloads/
+   
+5. MySQL WorkBench
+   Can be downloaded from website:
+   https://www.mysql.com/products/workbench/
   
 Usage:
 
@@ -82,12 +90,12 @@ click the fix button to select war exploded:
 
     ![idea_13](./img/8.png)
 
-# Deploy to the third party
 16. Build Artifacts
     ![idea_50](./img/50.png)
 
 17. click Build and generate .war file
     ![idea_51](./img/51.png)
+# Deploy to the third party (option1)
 
 18. go to https://console.aws.amazon.com and then create a free account (account creation process may be changed since it uses 2-step verification).
 
@@ -105,7 +113,30 @@ click the fix button to select war exploded:
 22. access web pages in a browser after running the content in a third party serve. My Demo  Sample-env-2.xmxbdjuc3w.us-west-2.elasticbeanstalk.com 
     ![idea_55](./img/70.png)
 
-
+# Deploy to the third party (option2)
+23. Need to create table in the MySQL, click Management. In the Data import, create the scheme and use the file src/main/java/com/websystique/springmvc/MySQLDB/db.sql to import data
+    ![idea_57](./img/96.png)
+    
+24. Click src/main/java/com/websystique/springmvc/configuration/springJDBCConfig.java to input the url, username, and password to access your local database.
+    ![idea_58](./img/97.png)
+    
+25. after download Tomcat from http://tomcat.apache.org/download-80.cgi, click setup, select host manager and examples.
+    ![idea_56](./img/90.png)
+    
+26. record username and password, because you need to use username and password to access Tomcat host manager.
+    ![idea_91](./img/91.png)
+    
+27. click start to launch Tomcat
+    ![idea_92](./img/92.png)
+    
+28. After you put http://localhost:8080/, below images appears, shown it succeeds to launch Tomcat. After that, click the Manager App to access deploy.
+    ![idea_93](./img/93.png)
+    
+29. give the input and path to the war.
+    ![idea_93](./img/94.png)
+    
+30. Successful!!!!
+    ![idea_93](./img/95.png)
 
 
 # References:
