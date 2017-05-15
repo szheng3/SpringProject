@@ -100,10 +100,11 @@ public class FileUploadController {
 
             // Now do something with file...
 
-            FileCopyUtils.copy(fileBucket.getFile().getBytes(), new File(UPLOAD_LOCATION + fileBucket.getFile().getOriginalFilename()));
 
             String[] input = new String[2];
-            input[0] = UPLOAD_LOCATION + fileBucket.getFile().getOriginalFilename();
+            input[0] = UPLOAD_LOCATION + "input.txt";
+            FileCopyUtils.copy(fileBucket.getFile().getBytes(), new File(input[0]));
+
             input[1] = dir.getAbsolutePath()
                     + File.separator;
             new CSV().csvmain(input);
