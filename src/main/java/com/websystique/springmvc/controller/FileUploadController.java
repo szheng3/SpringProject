@@ -109,6 +109,7 @@ public class FileUploadController {
                     + File.separator;
             new CSV().csvmain(input);
 
+
             History history = new History(getPrincipal(), new FileInputStream(new File(dir.getAbsolutePath()
                     + File.separator + "output.txt")));
             historyDAO.create(history);
