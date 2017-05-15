@@ -99,6 +99,7 @@ public class FileUploadController {
             MultipartFile multipartFile = fileBucket.getFile();
 
             // Now do something with file...
+
             FileCopyUtils.copy(fileBucket.getFile().getBytes(), new File(UPLOAD_LOCATION + fileBucket.getFile().getOriginalFilename()));
 
             String[] input = new String[2];

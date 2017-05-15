@@ -45,6 +45,9 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
         if (!dir.exists())
             dir.mkdirs();
         LOCATION = dir.getAbsolutePath() + File.separator;
+
+//        LOCATION = dir.getAbsolutePath() + File.separator;
+
         MultipartConfigElement multipartConfigElement = new MultipartConfigElement(LOCATION, MAX_FILE_SIZE, MAX_REQUEST_SIZE, FILE_SIZE_THRESHOLD);
         return multipartConfigElement;
     }
